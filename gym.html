@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IronEdge Gym</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; line-height: 1.6; }
+    header { background: #222; color: white; padding: 20px 0; text-align: center; }
+    nav { background: #333; display: flex; justify-content: center; gap: 20px; padding: 10px 0; }
+    nav a { color: white; text-decoration: none; padding: 10px; }
+    nav a:hover { background: #555; border-radius: 5px; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .hero { background: url('/storage/emulated/0/Download/images.jpeg') center/cover no-repeat; color: white; text-align: center; height: 80vh; display: flex; flex-direction: column; justify-content: center; }
+    .hero h1 { font-size: 3em; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #f4f4f4; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    footer { background: #222; color: white; text-align: center; padding: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IronEdge Gym</h1>
+    <p>Transform Your Body, Transform Your Life</p>
+  </header>
+
+  <nav>
+    <a href="#facilities">Facilities</a>
+    <a href="#services">Services</a>
+    <a href="#plans">Membership Plans</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to IronEdge</h1>
+    <p>Join us and become the best version of yourself</p>
+  </section>
+
+  <section id="facilities">
+    <h2>Our Facilities</h2>
+    <div class="grid">
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/images (1).jpeg" alt="Cardio Zone" style="width:100%; border-radius: 8px;">
+          <h3>Cardio Zone</h3><p>Top-tier treadmills, ellipticals, and bikes.</p></div>
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/images (2).jpeg" alt="Weightlifting Zone" style="width:100%; border-radius: 8px;">
+          <h3>Weightlifting Area</h3><p>Free weights, machines, and benches.</p></div>
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/images (3).jpeg" alt="Yoga Studio Zone" style="width:100%; border-radius: 8px;">
+          <h3>Yoga Studio</h3><p>Peaceful space for yoga and meditation.</p></div>
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/images (4).jpeg" alt="Lockers Room Zone" style="width:100%; border-radius: 8px;">
+          <h3>Locker Rooms</h3><p>Clean and secure locker and shower areas.</p></div>
+    </div>
+  </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/file_000000006578622fbefd9745001020c7.png"alt="our services zone"style="width:100%;border-radius:8px;">
+          <h3>Personal Training</h3><p>1-on-1 sessions with certified trainers.</p></div>
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/file_00000000818c622fb198070d551956f5.png"alt="group classes zone"style="width:100%;border-radius:8px;">
+          <h3>Group Classes</h3><p>Join Zumba, HIIT, Pilates and more.</p></div>
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/file_000000000ae061f5a376021b49e5e184.png"style="width:100%; border-radius8px;"
+          <h3>Nutrition Guidance</h3><p>Customized diet plans from experts.</p></div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2>Membership Plans</h2>
+    <div class="grid">
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/file_00000000dd9461f894c3b155f7a0fe08.png"style="width:100%; border-radius8px;"
+          <h3>Basic</h3><p>$30/month<br>Access to gym & locker rooms</p></div>
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/file_00000000dd9461f894c3b155f7a0fe08.png"style="width:100%; border-radius8px;"
+          <h3>Standard</h3><p>$50/month<br>Includes all classes and equipment</p></div>
+      <div class="card">
+          <img src="/storage/emulated/0/HTML/file_00000000dd9461f894c3b155f7a0fe08.png"style="width:100%; border-radius8px;"
+          <h3>Premium</h3><p>$80/month<br>Includes personal training & diet plan</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@IronEdge.com | Phone:+91 7373838837</p>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required /><br><br>
+      <input type="email" placeholder="Your Email" required /><br><br>
+      <textarea placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 IronEdge Gym. All rights reserved.</p>
+  </footer>
+  <iframe src="https://www.google.com/maps/embed?..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you! We'll get back to you soon.");
+    }
+  </script>
+</body>
+</html>
+
